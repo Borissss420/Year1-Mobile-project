@@ -2,4 +2,5 @@
     <string name="app_name">TimeTrackerApp</string>
     <string name="btnSchedule">View Schedule</string>
     <string name="btnStatistics">View Statistics</string>
+    <string name="tvSelectedDate">Select a date</string>
 </resources>
