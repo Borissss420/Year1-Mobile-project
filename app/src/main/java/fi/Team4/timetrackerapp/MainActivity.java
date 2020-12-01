@@ -33,5 +33,6 @@ public class MainActivity extends AppCompatActivity {
         statisticsButton.setOnClickListener(v -> {
             startActivity(new Intent(MainActivity.this, StatisticActivity.class));
         });
+
     }
 }

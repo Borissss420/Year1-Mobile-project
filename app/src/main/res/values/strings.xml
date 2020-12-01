@@ -1,6 +1,26 @@
 <resources>
     <string name="app_name">TimeTrackerApp</string>
+    <string name="nothing"> </string>
     <string name="btnSchedule">View Schedule</string>
     <string name="btnStatistics">View Statistics</string>
     <string name="tvSelectedDate">Select a date</string>
+    <string name="btnAddEvent">Add event</string>
+    <string name="et_EventName">Enter event name</string>
+    <string name="et_StartingTime">Insert starting time</string>
+    <string name="et_EndingTime">Insert ending time</string>
+    <string name="btnView">View</string>
+    <string name="btnAdd">Add</string>
+    <string-array name="EventTypeArray">
+        <item>Idle</item>
+        <item>Studying</item>
+        <item>Working</item>
+        <item>Dining</item>
+        <item>Tidying</item>
+        <item>Bathing</item>
+        <item>Hanging out</item>
+        <item>Gaming</item>
+        <item>Reading</item>
+        <item>Watching TV</item>
+        <item>Others</item>
+    </string-array>
 </resources>
