@@ -43,7 +43,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:padding="10dp"
-            android:text="@string/rbtnDay" />
+            android:text="@string/rbtnDay"
+            android:textSize="20sp"/>
 
         <RadioButton
             android:id="@+id/rbtnWeek"
@@ -51,7 +52,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:padding="10dp"
-            android:text="@string/rbtnWeek" />
+            android:text="@string/rbtnWeek"
+            android:textSize="20sp"/>
 
         <!--        <RadioButton-->
         <!--            android:id="@+id/rbtnMonth"-->
@@ -67,7 +69,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:text="@string/tvStatemnet2"
+        android:text="@string/tvStatement2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline7"
         app:layout_constraintStart_toStartOf="parent"
@@ -88,5 +90,28 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.25" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="100dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/rgDisplay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_random" />
+
+    <TextView
+        android:id="@+id/tvStatistic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/tvStatistic"
+        android:textColor="@color/pinkOrange"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/rgDisplay"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
