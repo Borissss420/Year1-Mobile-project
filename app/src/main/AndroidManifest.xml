@@ -12,7 +12,8 @@
 
         <activity
             android:name=".AddAndViewActivity"
-            android:parentActivityName=".ScheduleActivity">
+            android:parentActivityName=".ScheduleActivity"
+            android:windowSoftInputMode="adjustPan">
         </activity>
         <activity
             android:name=".StatisticActivity"

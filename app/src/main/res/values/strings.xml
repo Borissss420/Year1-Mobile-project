@@ -6,10 +6,15 @@
     <string name="tvSelectedDate">Select a date</string>
     <string name="btnAddEvent">Add event</string>
     <string name="et_EventName">Enter event name</string>
-    <string name="et_StartingTime">Insert starting time</string>
-    <string name="et_EndingTime">Insert ending time</string>
+    <string name="tvStartingTime">Insert starting time</string>
+    <string name="tvEndingTime">Insert ending time</string>
     <string name="btnView">View</string>
     <string name="btnAdd">Add</string>
+    <string name="rbtnDay">Yesterday</string>
+    <string name="rbtnWeek">Last 7 days</string>
+    <string name="rbtnMonth">Last 30 days</string>
+    <string name="tvStatement">Do you know how many events you have added into the app?</string>
+    <string name="tvStatemnet2">Click a radiobutton and you will see!</string>
     <string-array name="EventTypeArray">
         <item>Idle</item>
         <item>Studying</item>

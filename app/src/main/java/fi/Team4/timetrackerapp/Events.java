@@ -1,67 +1,34 @@
 package fi.Team4.timetrackerapp;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Events {
 
-    private String eventName;
-    private String eventType;
-    private String date;
-    private int startTime;
-    private int endTime;
+    public List<Event> events;
+    private static final Events ourInstance = new Events();
 
-    public Events(String eventName, String eventType, String date, int startTime, int endTime) {
-        this.eventName = eventName;
-        this.eventType = eventType;
-        this.date = date;
-        this.startTime = startTime;
-        this.endTime = endTime;
+    public static Events getInstance() {
+        return ourInstance;
+    }
+    private Events() {
+        events = new ArrayList<Event>();
+        events.add(new Event("Boris' Birthday","Idle", "20-04-2002", "00:00", "00:00"));
+    }
+    public void addEvent(String eventName, String eventType, String date, String startTime, String endTime) {
+        this.events.add(new Event(eventName, eventType, date, startTime, endTime));
     }
 
-    @Override
-    public String toString() {
-        return "Event name: " + this.eventName +
-                ", event type: " + this.eventType +
-                ", date: " + this.date +
-                ", start time: " + this.startTime +
-                ", end time: " + this.endTime;
+    public List<Event> getEvents() {
+        return events;
     }
 
-    public String getEventName() {
-        return eventName;
+    public int getEventIndex(Event event) {
+        return this.events.indexOf(event);
     }
 
-    public void setEventName(String eventName) {
-        this.eventName = eventName;
-    }
-
-    public String getEventType() {
-        return eventType;
-    }
-
-    public void setEventType(String eventType) {
-        this.eventType = eventType;
-    }
-
-    public String getDate() {
-        return date;
-    }
-
-    public void setDate(String date) {
-        this.date = date;
-    }
-
-    public int getStartTime() {
-        return startTime;
-    }
-
-    public void setStartTime(int startTime) {
-        this.startTime = startTime;
-    }
-
-    public int getEndTime() {
-        return endTime;
-    }
-
-    public void setEndTime(int endTime) {
-        this.endTime = endTime;
+    public List<Event> deleteEvent(int eventIndex) {
+        this.events.remove(eventIndex);
+        return events;
     }
 }
